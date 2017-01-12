@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=zh>
 <head>
-    <!-- so meta -->
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
@@ -41,12 +41,12 @@
     
     
     <!-- jquery -->
-    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/jquery/jquery.min.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body>
     
-    <div class="content index width mx-auto px2 my4">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="content index width mx-auto px2 my4">
         
           <header id="header">
   <a href="/">
@@ -152,7 +152,24 @@
         ga('send', 'pageview');
     </script>
 
-<!-- Disqus Comments -->
+<!-- Disqus Comments --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="custom_mathjax_source">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 </body>
